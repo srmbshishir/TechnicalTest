@@ -1,5 +1,5 @@
-app.controller("userhome", function ($scope, ajax, $rootScope) {
-    $rootScope.PageType = "user";
+app.controller("adminhome", function ($scope, ajax, $rootScope) {
+    $rootScope.PageType = "admin";
     $scope.toggle = function () {
         console.log("ahsi");
         $rootScope.toggle = !$rootScope.toggle;

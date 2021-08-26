@@ -1,0 +1,22 @@
+<div class="body"></div>
+<div class="grad"></div>
+<div class="header">
+    <div>
+        <a href="#!/"> <span>Singularity<br />Limited</span> </a>
+    </div>
+</div>
+<br />
+<div class="login">
+    <h1 style="color: rgb(31, 223, 159)">Login</h1>
+    <form ng-submit="login(user)">
+        <input type="text" ng-model="user.email" placeholder="user email" name="user" required /><br />
+        <input type="password" ng-model="user.password" placeholder="password" name="password" required />
+        <br /><br />
+        <input type="submit" name="login" class="btn btn-success" value="Login" />
+    </form>
+    <br />
+    <br />
+    <span style="color: tomato">Don't have an account?</span>
+    <!-- Link to be put -->
+    <a href="#!registration">Sign up</a>
+</div>
