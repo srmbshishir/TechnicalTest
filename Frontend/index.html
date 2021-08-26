@@ -23,8 +23,8 @@
 </head>
 
 <body ng-app="myApp">
-  <div ng-include="'views/inc/top_nav.html'"></div>
-  <div ng-include="'views/inc/side_nav.html'"></div>
+  <div ng-if="toggle===true" ng-include="'views/inc/top_nav.html'"></div>
+  <div ng-if="toggle===true" ng-include="'views/inc/side_nav.html'"></div>
   <div ng-view> </div>
 </body>
 
@@ -36,3 +36,4 @@
 
 
 <!-- Add Controllers here -->
+<script src="app/controllers/userhome.js"></script>
