@@ -31,7 +31,9 @@
           <Property Name="edited_at" Type="date" />
           <Property Name="deleted_at" Type="date" />
           <Property Name="recovered_at" Type="date" />
-          <Property Name="trash" Type="nchar" MaxLength="10" />
+          <Property Name="trash" Type="nchar" MaxLength="20" />
+          <Property Name="password" Type="nchar" MaxLength="20" />
+          <Property Name="email" Type="nchar" MaxLength="20" />
         </EntityType>
         <EntityContainer Name="SingularityLimitedModelStoreContainer">
           <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
@@ -68,7 +70,9 @@
           <Property Name="edited_at" Type="DateTime" Precision="0" />
           <Property Name="deleted_at" Type="DateTime" Precision="0" />
           <Property Name="recovered_at" Type="DateTime" Precision="0" />
-          <Property Name="trash" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="trash" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="password" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
         </EntityType>
         <EntityContainer Name="SingularityLimitedEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Products" EntityType="Self.Product" />
@@ -107,6 +111,8 @@
                 <ScalarProperty Name="deleted_at" ColumnName="deleted_at" />
                 <ScalarProperty Name="recovered_at" ColumnName="recovered_at" />
                 <ScalarProperty Name="trash" ColumnName="trash" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="email" ColumnName="email" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

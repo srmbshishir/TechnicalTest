@@ -17,5 +17,7 @@ namespace BEL
         public Nullable<System.DateTime> deleted_at { get; set; }
         public Nullable<System.DateTime> recovered_at { get; set; }
         public string trash { get; set; }
+        public string password { get; set; }
+        public string email { get; set; }
     }
 }

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SingularityLimitedModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="category" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="price" Type="Double" />
+    <Property Name="created_at" Type="DateTime" Precision="0" />
+    <Property Name="edited_at" Type="DateTime" Precision="0" />
+    <Property Name="deleted_at" Type="DateTime" Precision="0" />
+    <Property Name="recovered_at" Type="DateTime" Precision="0" />
+    <Property Name="trash" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="dept" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
+    <Property Name="salary" Type="Double" />
+    <Property Name="created_at" Type="DateTime" Precision="0" />
+    <Property Name="edited_at" Type="DateTime" Precision="0" />
+    <Property Name="deleted_at" Type="DateTime" Precision="0" />
+    <Property Name="recovered_at" Type="DateTime" Precision="0" />
+    <Property Name="trash" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="SingularityLimitedEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+  </EntityContainer>
+</Schema>

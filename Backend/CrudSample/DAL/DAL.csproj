@@ -76,6 +76,7 @@
     <Compile Include="User.cs">
       <DependentUpon>SingularityMS.tt</DependentUpon>
     </Compile>
+    <Compile Include="UserRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -89,6 +90,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="SingularityMS.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>SingularityMS.edmx</DependentUpon>
@@ -99,9 +103,6 @@
       <DependentUpon>SingularityMS.edmx</DependentUpon>
       <LastGenOutput>SingularityMS.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
