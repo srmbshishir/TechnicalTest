@@ -3,7 +3,8 @@ app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $lo
 
     $routeProvider
         .when("/", {
-            templateUrl: "views/pages/demopage.html"
+            templateUrl: "views/pages/mainhome.html",
+            controller: 'mainhome'
         })
         .when("/userhome", {
             templateUrl: "views/pages/userhome.html",
@@ -24,6 +25,14 @@ app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $lo
         .when("/Admin", {
             templateUrl: "views/pages/adminhome.html",
             controller: 'adminhome'
+        })
+        .when("/ViewUsers", {
+            templateUrl: "views/pages/viewusers.html",
+            controller: 'viewusers'
+        })
+        .when("/user/edit/:id", {
+            templateUrl: "views/pages/useredit.html",
+            controller: 'useredit'
         })
         .when("/User", {
             templateUrl: "views/pages/userhome.html",
