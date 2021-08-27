@@ -1,0 +1,56 @@
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <div class="row bg-title" style="background-color: yellowgreen;">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                <h4 class="page-title" style="color: white;">Add Product</h4>
+            </div>
+        </div>
+        <div class="form" style="max-width: 700px;">
+            <form class="form-validate form-horizontal" id="feedback_form" name="myForm"
+                ng-submit="CreateProduct(product)">
+                <div class="form-group">
+                    <label style="color: seagreen" for="name" class="control-label col-lg-2">Name
+                        <span class="required">*</span></label>
+                    <div class="col-lg-10">
+                        <input ng-model="product.name" class="form-control" id="name" name="name" type="text"
+                            required />
+                        <span class="text-danger" ng-show="myForm.name.$touched && myForm.name.$error.required">Name is
+                            required.</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="color: seagreen" for="category" class="control-label col-lg-2">Category</label>
+                    <span class="required">*</span></label>
+                    <div class="col-lg-10">
+                        <input ng-model="product.category" class="form-control" id="category" name="category"
+                            type="text" required />
+                        <span class="text-danger"
+                            ng-show="myForm.name.$touched && myForm.category.$error.required">Category
+                            is
+                            required.</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="color: seagreen" for="price" class="control-label col-lg-2">Price</label>
+                    <span class="required">*</span></label>
+                    <div class="col-lg-10">
+                        <input ng-model="product.price" class="form-control" id="price" name="price" type="text"
+                            required />
+                        <span class="text-danger" ng-show="myForm.name.$touched && myForm.price.$error.required">Price
+                            is
+                            required.</span>
+                    </div>
+                </div>
+                <span>{{passError}}</span>
+                <div class="form-group">
+                    <div class="col-lg-offset-2 col-lg-10">
+                        <button class="btn btn-primary" type="submit">
+                            Add Product
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- /.container-fluid -->
+        <footer class="footer text-center">2021 &copy; InraBd</footer>
+    </div>

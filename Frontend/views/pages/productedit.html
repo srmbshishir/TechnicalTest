@@ -1,8 +1,8 @@
 <div id="page-wrapper">
     <div class="container-fluid">
-        <div class="row bg-title" style="background-color: darkmagenta;">
+        <div class="row bg-title" style="background-color: brown;">
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                <h4 class="page-title" style="color: white;">Edit User</h4>
+                <h4 class="page-title" style="color: white;">Edit Product</h4>
             </div>
         </div>
         <div class="col-md-8 col-xs-12">
@@ -11,34 +11,27 @@
                     <div class="form-group">
                         <label class="col-md-12">Name</label>
                         <div class="col-md-12">
-                            <input type="text" ng-model="user.name" placeholder="Enter name" name="name"
+                            <input type="text" ng-model="product.name" placeholder="Enter name" name="name"
                                 class="form-control form-control-line" required />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-12">Email</label>
+                        <label class="col-md-12">Category</label>
                         <div class="col-md-12">
-                            <input type="text" ng-model="user.email" placeholder="email" name="email"
+                            <input type="text" ng-model="product.category" placeholder="category" name="category"
                                 class="form-control form-control-line" required />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-md-12">Department</label>
+                        <label class="col-md-12">Price</label>
                         <div class="col-md-12">
-                            <input type="text" ng-model="user.dept" placeholder="department" name="department"
-                                class="form-control form-control-line" required />
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-md-12">Salary</label>
-                        <div class="col-md-12">
-                            <input type="text" ng-model="user.salary" placeholder="salary" name="salary"
+                            <input type="text" ng-model="product.price" placeholder="price" name="price"
                                 class="form-control form-control-line" required />
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-12">
-                            <input type="submit" ng-click="edit(user)" name="edit_user" class="btn btn-success"
+                            <input type="submit" ng-click="edit(product)" name="edit_product" class="btn btn-success"
                                 value="Update" />
                         </div>
                     </div>

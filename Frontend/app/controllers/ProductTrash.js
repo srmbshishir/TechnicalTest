@@ -1,10 +1,10 @@
-app.controller("viewtrash", function ($scope, $http, ajax, $rootScope) {
+app.controller("ProductTrash", function ($scope, $http, ajax, $rootScope) {
     console.log("ashis");
-    ajax.get("https://localhost:44336/api/trash", success, error);
+    ajax.get("https://localhost:44336/api/producttrash", success, error);
     function success(response) {
         console.log("S")
-        $scope.users = response.data;
-        console.log($scope.users);
+        $scope.products = response.data;
+        console.log($scope.products);
     }
     function error(error) {
         console.log("E");
@@ -15,16 +15,16 @@ app.controller("viewtrash", function ($scope, $http, ajax, $rootScope) {
             //do stuff
 
             console.log("ashsi");
-            ajax.put("https://localhost:44336/api/recover/" + id,
+            ajax.put("https://localhost:44336/api/productrecover/" + id,
                 function (response) {
                     console.log(response);
                 },
                 function (err) {
                     console.log(err);
                     alert("recovered");
-                    ajax.get("https://localhost:44336/api/trash", success, error);
+                    ajax.get("https://localhost:44336/api/producttrash", success, error);
                     function success(response) {
-                        $scope.users = response.data;
+                        $scope.products = response.data;
                     }
                     function error(error) {
 

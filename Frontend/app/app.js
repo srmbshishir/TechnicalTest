@@ -46,9 +46,21 @@ app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $lo
             templateUrl: "views/pages/userhome.html",
             controller: 'userhome'
         })
+        .when("/AddProduct", {
+            templateUrl: "views/pages/addproduct.html",
+            controller: 'addproduct'
+        })
         .when("/ViewProducts", {
             templateUrl: "views/pages/viewproducts.html",
             controller: 'viewproducts'
+        })
+        .when("/product/edit/:id", {
+            templateUrl: "views/pages/productedit.html",
+            controller: 'productedit'
+        })
+        .when("/ProductTrash", {
+            templateUrl: "views/pages/ProductTrash.html",
+            controller: 'ProductTrash'
         })
         .otherwise({
             redirectTo: "/"
