@@ -55,8 +55,23 @@ namespace DAL
         {
             var user = context.Users.FirstOrDefault(e => e.id == id);
             user.trash = "YES";
+            user.deleted_at = DateTime.Now.Date;
             context.SaveChanges();
             return user;
+        }
+        public static List<User> GetDeletedUsers()
+        {
+            var list = (from p in context.Users
+                        where p.trash == "YES"
+                        select p).ToList();
+            return list;
+        }
+        public static void Recover(int id)
+        {
+            var oldp = context.Users.FirstOrDefault(e => e.id == id);
+            oldp.trash = "NULL";
+            oldp.recovered_at = DateTime.Now.Date;
+            context.SaveChanges();
         }
     }
 }

@@ -45,5 +45,14 @@ namespace BLL
             var user = UserRepo.DeleteUser(id);
             return AutoMapper.Mapper.Map<User, UserModel>(user);
         }
+        public static List<UserModel> GetDeletedUsers()
+        {
+            var users = UserRepo.GetDeletedUsers();
+            return AutoMapper.Mapper.Map<List<User>, List<UserModel>>(users);
+        }
+        public static void Recover(int id)
+        {
+            UserRepo.Recover(id);
+        }
     }
 }
