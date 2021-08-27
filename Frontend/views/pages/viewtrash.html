@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row bg-title">
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                <h4 class="page-title">Users</h4>
+                <h4 class="page-title">Deleted Users</h4>
             </div>
             <!-- /.col-lg-12 -->
         </div>
@@ -36,10 +36,9 @@
                                     <td>{{user.edited_at}}</td>
                                     <td>{{user.deleted_at}}</td>
                                     <td>{{user.recovered_at}}</td>
-                                    <td><a href="#!user/edit/{{user.id}}" class="btn btn-success">Edit</a></td>
                                     <td>
-                                        <input type="submit" ng-model="delete" ng-click="delete(user.id)"
-                                            name="delete_user" class="btn btn-danger" value="Delete" />
+                                        <input type="submit" ng-model="recover" ng-click="recover(user.id)"
+                                            name="recover_user" class="btn btn-success" value="Recover" />
                                     </td>
                                 </tr>
                                 <!-- ?'ng-click="

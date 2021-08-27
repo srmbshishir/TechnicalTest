@@ -26,9 +26,17 @@ app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $lo
             templateUrl: "views/pages/adminhome.html",
             controller: 'adminhome'
         })
+        .when("/AddUser", {
+            templateUrl: "views/pages/adduser.html",
+            controller: 'adduser'
+        })
         .when("/ViewUsers", {
             templateUrl: "views/pages/viewusers.html",
             controller: 'viewusers'
+        })
+        .when("/ViewTrash", {
+            templateUrl: "views/pages/viewtrash.html",
+            controller: 'viewtrash'
         })
         .when("/user/edit/:id", {
             templateUrl: "views/pages/useredit.html",
@@ -37,6 +45,10 @@ app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $lo
         .when("/User", {
             templateUrl: "views/pages/userhome.html",
             controller: 'userhome'
+        })
+        .when("/ViewProducts", {
+            templateUrl: "views/pages/viewproducts.html",
+            controller: 'viewproducts'
         })
         .otherwise({
             redirectTo: "/"

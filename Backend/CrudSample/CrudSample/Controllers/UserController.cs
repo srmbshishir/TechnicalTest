@@ -56,5 +56,20 @@ namespace CrudSample.Controllers
         {
             return UserService.DeleteUser(id);
         }
+
+        [Route("api/trash")]
+        [HttpGet]
+        public List<UserModel> GetDeletedUsers()
+        {
+            return UserService.GetDeletedUsers();
+        }
+
+        [Route("api/recover/{id}")]
+        [HttpPut]
+        public void Recover(int id)
+        {
+            UserService.Recover(id);
+        }
+
     }
 }
