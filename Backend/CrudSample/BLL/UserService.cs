@@ -22,5 +22,28 @@ namespace BLL
             var users = UserRepo.GetUserLogin(mail, pass);
             return AutoMapper.Mapper.Map<User, UserModel>((User)users);
         }
+
+        public static List<UserModel> GetAllUsers()
+        {
+            var users = UserRepo.GetAllUsers();
+            return AutoMapper.Mapper.Map<List<User>, List<UserModel>>(users);
+        }
+
+        public static UserModel GetUser(int id)
+        {
+            var user = UserRepo.GetUser(id);
+            return AutoMapper.Mapper.Map<User, UserModel>(user);
+        }
+        public static void EditUser(UserModel usr, int id)
+        {
+            var data = AutoMapper.Mapper.Map<UserModel, User>(usr);
+            //var d = new Department() { Id = dept.Id, Name = dept.Name };
+            UserRepo.EditUser(data, id);
+        }
+        public static UserModel DeleteUser(int id)
+        {
+            var user = UserRepo.DeleteUser(id);
+            return AutoMapper.Mapper.Map<User, UserModel>(user);
+        }
     }
 }

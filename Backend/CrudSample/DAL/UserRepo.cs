@@ -29,5 +29,34 @@ namespace DAL
             }
             return null;
         }
+        public static List<User> GetAllUsers()
+        {
+            var list = (from p in context.Users
+                          where p.trash!="YES"
+                          select p).ToList();
+            return list;
+        }
+
+        public static User GetUser(int id)
+        {
+            return context.Users.FirstOrDefault(e => e.id == id);
+        }
+        public static void EditUser(User u,int id)
+        {
+            var oldp = context.Users.FirstOrDefault(e => e.id == id);
+            oldp.name = u.name;
+            oldp.email = u.email;
+            oldp.dept = u.dept;
+            oldp.salary = u.salary;
+            oldp.edited_at = DateTime.Now.Date;
+            context.SaveChanges();
+        }
+        public static User DeleteUser(int id)
+        {
+            var user = context.Users.FirstOrDefault(e => e.id == id);
+            user.trash = "YES";
+            context.SaveChanges();
+            return user;
+        }
     }
 }

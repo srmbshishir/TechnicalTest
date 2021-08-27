@@ -15,7 +15,7 @@ namespace CrudSample.Controllers
         [HttpPost]
         public UserModel AddUser(UserModel user)
         {
-            user.created_at = DateTime.Now;
+            user.created_at = DateTime.Now.Date;
             return UserService.AddUser(user);
         }
 
@@ -28,6 +28,33 @@ namespace CrudSample.Controllers
                 return null;
             }
             return UserService.GetUserlogin(user.email, user.password);
+        }
+
+        [Route("api/users")]
+        [HttpGet]
+        public List<UserModel> GetAllUsers()
+        {
+            return UserService.GetAllUsers();
+        }
+
+        [Route("api/users/{id}")]
+        [HttpGet]
+        public UserModel GetUser(int id)
+        {
+            return UserService.GetUser(id);
+        }
+
+        [Route("api/users/{id}")]
+        [HttpPut]
+        public void EditUser(UserModel usr,int id)
+        {
+            UserService.EditUser(usr,id);
+        }
+        [Route("api/users/{id}")]
+        [HttpDelete]
+        public UserModel DeleteUser(int id)
+        {
+            return UserService.DeleteUser(id);
         }
     }
 }
