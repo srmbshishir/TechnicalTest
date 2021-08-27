@@ -24,7 +24,6 @@
 
 <body ng-app="myApp">
   <link href="content/login.css" rel="stylesheet" />
-  <div ng-if="PageType === 'admin' || PageType === 'user'" ng-include="'views/inc/common_top_nav.html'"></div>
   <div ng-if="toggle===true && PageType === 'user'" ng-include="'views/inc/user_side_nav.html'"></div>
   <div ng-if="toggle===true && PageType === 'admin'" ng-include="'views/inc/admin_side_nav.html'"></div>
   <div ng-view> </div>
@@ -38,12 +37,19 @@
 
 
 <!-- Add Controllers here -->
-<script src="app/controllers/userhome.js"></script>
+
 <script src="app/controllers/register.js"></script>
 <script src="app/controllers/login.js"></script>
-<script src="app/controllers/adminhome.js"></script>
 <script src="app/controllers/logout.js"></script>
+
+<script src="app/controllers/adminhome.js"></script>
 <script src="app/controllers/viewusers.js"></script>
 <script src="app/controllers/useredit.js"></script>
 <script src="app/controllers/viewtrash.js"></script>
 <script src="app/controllers/adduser.js"></script>
+
+<script src="app/controllers/userhome.js"></script>
+<script src="app/controllers/addproduct.js"></script>
+<script src="app/controllers/viewproducts.js"></script>
+<script src="app/controllers/productedit.js"></script>
+<script src="app/controllers/ProductTrash.js"></script>
