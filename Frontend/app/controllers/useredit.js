@@ -32,7 +32,7 @@ app.controller("useredit", function ($scope, $http, ajax, $routeParams, $locatio
             ajax.put("https://localhost:44336/api/users/" + $routeParams.id, d,
                 function (response) {
                     console.log(response);
-                    alert("edited");
+                    alert("updated");
                 },
                 function (err) {
                     console.log(err);

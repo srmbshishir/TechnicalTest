@@ -22,3 +22,15 @@ J:\SingularityTechnicalTest\TechnicalTest\Backend\CrudSample\DAL\obj\Debug\DAL.c
 J:\SingularityTechnicalTest\TechnicalTest\Backend\CrudSample\DAL\obj\Debug\DAL.csproj.CopyComplete
 J:\SingularityTechnicalTest\TechnicalTest\Backend\CrudSample\DAL\obj\Debug\DAL.dll
 J:\SingularityTechnicalTest\TechnicalTest\Backend\CrudSample\DAL\obj\Debug\DAL.pdb
+J:\singularity backup\TechnicalTest\Backend\CrudSample\DAL\bin\Debug\DAL.dll.config
+J:\singularity backup\TechnicalTest\Backend\CrudSample\DAL\bin\Debug\DAL.dll
+J:\singularity backup\TechnicalTest\Backend\CrudSample\DAL\bin\Debug\DAL.pdb
+J:\singularity backup\TechnicalTest\Backend\CrudSample\DAL\bin\Debug\EntityFramework.dll
+J:\singularity backup\TechnicalTest\Backend\CrudSample\DAL\bin\Debug\EntityFramework.SqlServer.dll
+J:\singularity backup\TechnicalTest\Backend\CrudSample\DAL\bin\Debug\EntityFramework.xml
+J:\singularity backup\TechnicalTest\Backend\CrudSample\DAL\bin\Debug\EntityFramework.SqlServer.xml
+J:\singularity backup\TechnicalTest\Backend\CrudSample\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+J:\singularity backup\TechnicalTest\Backend\CrudSample\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+J:\singularity backup\TechnicalTest\Backend\CrudSample\DAL\obj\Debug\DAL.csproj.CopyComplete
+J:\singularity backup\TechnicalTest\Backend\CrudSample\DAL\obj\Debug\DAL.dll
+J:\singularity backup\TechnicalTest\Backend\CrudSample\DAL\obj\Debug\DAL.pdb

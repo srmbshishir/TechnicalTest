@@ -30,3 +30,19 @@ J:\SingularityTechnicalTest\TechnicalTest\Backend\CrudSample\BLL\obj\Debug\BLL.c
 J:\SingularityTechnicalTest\TechnicalTest\Backend\CrudSample\BLL\obj\Debug\BLL.csproj.CopyComplete
 J:\SingularityTechnicalTest\TechnicalTest\Backend\CrudSample\BLL\obj\Debug\BLL.dll
 J:\SingularityTechnicalTest\TechnicalTest\Backend\CrudSample\BLL\obj\Debug\BLL.pdb
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\bin\Debug\BLL.dll
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\bin\Debug\BLL.pdb
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\bin\Debug\AutoMapper.dll
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\bin\Debug\BEL.dll
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\bin\Debug\DAL.dll
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\bin\Debug\EntityFramework.dll
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\bin\Debug\BEL.pdb
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\bin\Debug\DAL.pdb
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\bin\Debug\DAL.dll.config
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\bin\Debug\AutoMapper.xml
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\bin\Debug\EntityFramework.xml
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\obj\Debug\BLL.csproj.CopyComplete
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\obj\Debug\BLL.dll
+J:\singularity backup\TechnicalTest\Backend\CrudSample\BLL\obj\Debug\BLL.pdb

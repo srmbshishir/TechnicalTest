@@ -17,57 +17,65 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label style="color: seagreen" for="name" class="control-label col-lg-2">Email</label>
+                    <label style="color: seagreen" for="email" class="control-label col-lg-2">Email</label>
                     <span class="required">*</span></label>
                     <div class="col-lg-10">
                         <input ng-model="user.email" class="form-control" id="email" name="email" type="text"
                             required />
-                        <span class="text-danger" ng-show="myForm.name.$touched && myForm.email.$error.required">Email
+                        <span class="text-danger" ng-show="myForm.email.$touched && myForm.email.$error.required">Email
                             is
                             required.</span>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label style="color: seagreen" for="name" class="control-label col-lg-2">Password</label>
+                    <label style="color: seagreen" for="password" class="control-label col-lg-2">Password</label>
                     <span class="required">*</span></label>
                     <div class="col-lg-10">
                         <input ng-model="user.password" class="form-control" id="password" name="password"
                             type="password" required />
                         <span class="text-danger"
-                            ng-show="myForm.name.$touched && myForm.password.$error.required">Password
+                            ng-show="myForm.password.$touched && myForm.password.$error.required">Password
                             is
                             required.</span>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label style="color: seagreen" for="name" class="control-label col-lg-2">Confirm
+                    <label style="color: seagreen" for="confirmpassword" class="control-label col-lg-2">Confirm
                         Password</label>
                     <span class="required">*</span></label>
                     <div class="col-lg-10">
                         <input ng-model="user.confirmpassword" class="form-control" id="confirmpassword"
                             name="confirmpassword" type="password" required />
-                        <span class="text-danger" ng-show="myForm.name.$touched && myForm.cpass.$error.required">Confirm
+                        <span class="text-danger"
+                            ng-show="myForm.confirmpassword.$touched && myForm.confirmpassword.$error.required">Confirm
                             Password is
                             required.</span>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label style="color: seagreen" for="name" class="control-label col-lg-2">Salary</label>
+                    <label style="color: seagreen" for="salary" class="control-label col-lg-2">Salary</label>
                     <span class="required">*</span></label>
                     <div class="col-lg-10">
                         <input ng-model="user.salary" class="form-control" id="salary" name="salary" type="salary"
                             required />
-                        <span class="text-danger" ng-show="myForm.name.$touched && myForm.salary.$error.required">Salary
+                        <span class="text-danger"
+                            ng-show="myForm.salary.$touched && myForm.salary.$error.required">Salary
                             is
                             required.</span>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label style="color: seagreen" for="department" class="control-label col-lg-2">Department
+                    <label style="color: seagreen" for="department" class="control-label col-lg-2">Dept
                         <span class="required">*</span></label>
                     <div class="col-lg-10">
                         <select name="dept" ng-model="user.dept" ng-options="dept for dept in depts track by dept"
-                            class="form-control form-control-line" required></select>
+                            class="form-control form-control-line" required>
+                        </select>
+                        <span class="text-danger"
+                            ng-show="myForm.dept.$touched && myForm.dept.$error.required">Department
+                            is
+                            required.
+                        </span>
                     </div>
                 </div>
                 <span>{{passError}}</span>

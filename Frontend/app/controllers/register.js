@@ -1,5 +1,5 @@
-app.controller("register", function ($scope, ajax, $rootScope) {
-    $scope.depts = ["User", "Admin"];
+app.controller("register", function ($scope, ajax, $rootScope, $location) {
+    $scope.depts = ["User"];
 
     $scope.createUser = function (user) {
 

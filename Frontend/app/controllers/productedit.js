@@ -29,7 +29,7 @@ app.controller("productedit", function ($scope, $http, ajax, $routeParams, $root
             ajax.put("https://localhost:44336/api/products/" + $routeParams.id, d,
                 function (response) {
                     console.log(response);
-                    alert("edited");
+                    alert("updated");
                 },
                 function (err) {
                     console.log(err);
