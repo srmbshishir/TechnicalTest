@@ -70,7 +70,18 @@ app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $lo
 }]);
 
 app.controller("myController", function ($rootScope) {
-    $rootScope.toggle = false;
+    $rootScope.add = false;
+    $rootScope.edit = false;
+    $rootScope.update = false;
+    $rootScope.delete = false;
+    $rootScope.view = false;
+
+    $rootScope.adminAdd = false;
+    $rootScope.adminEdit = false;
+    $rootScope.adminUpdate = false;
+    $rootScope.adminDelete = false;
+    $rootScope.adminView = false;
+
     $rootScope.UserId = "";
     $rootScope.UserType = "";
     $rootScope.UserName = "";

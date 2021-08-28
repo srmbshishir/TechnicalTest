@@ -24,8 +24,8 @@
 
 <body ng-app="myApp">
   <link href="content/login.css" rel="stylesheet" />
-  <div ng-if="toggle===true && PageType === 'user'" ng-include="'views/inc/user_side_nav.html'"></div>
-  <div ng-if="toggle===true && PageType === 'admin'" ng-include="'views/inc/admin_side_nav.html'"></div>
+  <div ng-if="PageType === 'user'" ng-include="'views/inc/user_side_nav.html'"></div>
+  <div ng-if="PageType === 'admin'" ng-include="'views/inc/admin_side_nav.html'"></div>
   <div ng-view> </div>
 </body>
 
