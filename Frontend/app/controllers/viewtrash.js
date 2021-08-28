@@ -1,14 +1,21 @@
-app.controller("viewtrash", function ($scope, $http, ajax, $rootScope) {
-    console.log("ashis");
-    ajax.get("https://localhost:44336/api/trash", success, error);
-    function success(response) {
-        console.log("S")
-        $scope.users = response.data;
-        console.log($scope.users);
+app.controller("viewtrash", function ($scope, $http, ajax, $rootScope, $location) {
+    if ($rootScope.adminView == true) {
+        console.log("ashis");
+        ajax.get("https://localhost:44336/api/trash", success, error);
+        function success(response) {
+            console.log("S")
+            $scope.users = response.data;
+            console.log($scope.users);
+        }
+        function error(error) {
+            console.log("E");
+        }
     }
-    function error(error) {
-        console.log("E");
+    else {
+        alert("Please turn on view action");
+        $location.path("/Admin");
     }
+
 
     $scope.recover = function (id) {
         if (confirm('Are you sure your want to recover?')) {

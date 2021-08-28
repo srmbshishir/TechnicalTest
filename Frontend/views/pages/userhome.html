@@ -7,10 +7,19 @@
         </div>
         <div class="col-md-8 col-xs-12">
             <h1>Please click the button and turn on action status to do crud operation</h1>
-            <button ng-click="toggle()" style="color: black;">Turned {{status}}</button>
+            <button ng-click="addproduct()" class="btn btn-success" style="color: black;">Add Action Turned :
+                <span style="color: rgb(40, 9, 54)"><b>{{add}}</b></span></button><br><br>
+            <button ng-click="editproduct()" class="btn btn-primary" style="color: black;">Edit Action Turned :
+                <span style="color:rgb(40, 9, 54)">{{edit}}</span></button><br><br>
+            <button ng-click=" updateproduct()" class="btn btn-info" style="color: black;">Update Action Turned :
+                <span style="color:rgb(40, 9, 54)">{{update}}</span></button><br><br>
+            <button ng-click=" deleteproduct()" class="btn btn-danger" style="color: black;">Delete Action Turned :
+                <span style="color:rgb(40, 9, 54)">{{delete}}</span></button><br><br>
+            <button ng-click=" viewproduct()" class="btn btn-warning" style="color: black;">View Action Turned :
+                <span style="color:rgb(40, 9, 54)">{{view}}</span></button><br><br>
 
         </div>
     </div>
     <!-- /.container-fluid -->
-    <footer class="footer text-center">2021 &copy; InraBd</footer>
+    <footer class=" footer text-center">2021 &copy; InraBd</footer>
 </div>

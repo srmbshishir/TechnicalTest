@@ -7,7 +7,16 @@
         </div>
         <div class="col-md-8 col-xs-12">
             <h1>Please click the button and turn on action status to do crud operation</h1>
-            <button ng-click="toggle()" style="color: black;">Action status : {{status}}</button>
+            <button ng-click="add()" class="btn btn-success" style="color: black;">Add Action Turned :
+                {{adminAdd}}</button><br><br>
+            <button ng-click="edit()" class="btn btn-primary" style="color: black;">Edit Action Turned :
+                {{adminEdit}}</button><br><br>
+            <button ng-click="update()" class="btn btn-info" style="color: black;">Update Action Turned :
+                {{adminUpdate}}</button><br><br>
+            <button ng-click="delete()" class="btn btn-danger" style="color: black;">Delete Action Turned :
+                {{adminDelete}}</button><br><br>
+            <button ng-click="view()" class="btn btn-warning" style="color: black;">View Action Turned :
+                {{adminView}}</button><br><br>
 
         </div>
     </div>
